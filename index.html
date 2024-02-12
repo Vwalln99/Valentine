@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Pink Edition</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="backgroundMusic" autoplay muted>
+        <source src="background_music.mp3" type="audio/mpeg">
+      </audio>
+  <div class="container">
+    <h1>Pokemon</h1>
+    <h2>Pink Edition</h2>
+    <iframe id="introvideo" width="340" height="300" src="intro.mp4" allow="autoplay"></iframe>
+    <button id="startButton">Start Adventure</button>
+  </div>
+  
+  <div id="nameScreen" class="hidden">
+    <input type="text" id="nameInput" placeholder="Your name">
+    <button id="nameSubmit">Next</button>
+  </div>
+  
+  <div id="pokemonSelection" class="hidden">
+    <h2>Choose your Pokemon!</h2>
+    <div id="pokeballs">
+      <img src="pokeball.png" class="pokeball" id="pokeball1">
+      <img src="pokeball.png" class="pokeball" id="pokeball2">
+      <img src="pokeball.png" class="pokeball" id="pokeball3">
+    </div>
+  </div>
+  
+  <div id="resultScreen" class="hidden">
+    <img src="pokemon.jpeg" id="pokemonImage">
+    <p id="chosenPokemon"></p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
